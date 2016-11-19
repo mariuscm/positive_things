@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @chirp.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @chirp.content %>
+</p>
+
+<%= link_to 'Edit', edit_chirp_path(@chirp) %> |
+<%= link_to 'Back', chirps_path %>
