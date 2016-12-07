@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @happy_tree.color %>
+</p>
+
+<p>
+  <strong>Brush:</strong>
+  <%= @happy_tree.brush %>
+</p>
+
+<p>
+  <strong>Background:</strong>
+  <%= @happy_tree.background %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @happy_tree.desc %>
+</p>
+
+<%= link_to 'Edit', edit_happy_tree_path(@happy_tree) %> |
+<%= link_to 'Back', happy_trees_path %>

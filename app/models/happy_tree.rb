@@ -1,0 +1,2 @@
+class HappyTree < ApplicationRecord
+end

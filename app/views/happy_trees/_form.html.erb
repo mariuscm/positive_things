@@ -1,0 +1,37 @@
+<%= form_for(happy_tree) do |f| %>
+  <% if happy_tree.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(happy_tree.errors.count, "error") %> prohibited this happy_tree from being saved:</h2>
+
+      <ul>
+      <% happy_tree.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+  </div>
+
+  <div class="field">
+    <%= f.label :brush %>
+    <%= f.text_field :brush %>
+  </div>
+
+  <div class="field">
+    <%= f.label :background %>
+    <%= f.check_box :background %>
+  </div>
+
+  <div class="field">
+    <%= f.label :desc %>
+    <%= f.text_area :desc %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

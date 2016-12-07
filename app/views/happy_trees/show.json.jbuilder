@@ -1,0 +1,1 @@
+json.partial! "happy_trees/happy_tree", happy_tree: @happy_tree

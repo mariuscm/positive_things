@@ -1,0 +1,1 @@
+json.array! @happy_trees, partial: 'happy_trees/happy_tree', as: :happy_tree

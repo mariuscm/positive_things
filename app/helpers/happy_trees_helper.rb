@@ -1,0 +1,2 @@
+module HappyTreesHelper
+end

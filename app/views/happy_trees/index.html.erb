@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Happy Trees</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Color</th>
+      <th>Brush</th>
+      <th>Background</th>
+      <th>Desc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @happy_trees.each do |happy_tree| %>
+      <tr>
+        <td><%= happy_tree.color %></td>
+        <td><%= happy_tree.brush %></td>
+        <td><%= happy_tree.background %></td>
+        <td><%= happy_tree.desc %></td>
+        <td><%= link_to 'Show', happy_tree %></td>
+        <td><%= link_to 'Edit', edit_happy_tree_path(happy_tree) %></td>
+        <td><%= link_to 'Destroy', happy_tree, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Happy Tree', new_happy_tree_path %>
